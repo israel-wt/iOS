@@ -18,8 +18,8 @@
 		02CA904B24F6C11A00D41DDF /* NavigatorSharePatchUserScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CA904A24F6C11A00D41DDF /* NavigatorSharePatchUserScript.swift */; };
 		02DC6A52255D8C0A00B03BC2 /* fingerprint.js in Resources */ = {isa = PBXBuildFile; fileRef = 02DC6A51255D8C0A00B03BC2 /* fingerprint.js */; };
 		02DC6A64255D8C5000B03BC2 /* FingerprintUserScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC6A63255D8C5000B03BC2 /* FingerprintUserScript.swift */; };
-		07A1A0B52670208C008929DC /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1A0B42670208C008929DC /* Base.swift */; };
-		07A1A0C12670209E008929DC /* SearchBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1A0C02670209E008929DC /* SearchBoxTests.swift */; };
+		07FD8B2026853E4E00A193B6 /* DuckDuckGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD8B1F26853E4E00A193B6 /* DuckDuckGoUITests.swift */; };
+		07FD8B2826853E7D00A193B6 /* DuckDuckGoUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD8B2726853E7D00A193B6 /* DuckDuckGoUITestBase.swift */; };
 		0A6CC0EF23904D5400E4F627 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A6CC0EE23904D5400E4F627 /* Settings.bundle */; };
 		1CB7B82123CEA1F800AA24EA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7B82023CEA1F800AA24EA /* DateExtension.swift */; };
 		1CB7B82323CEA28300AA24EA /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7B82223CEA28300AA24EA /* DateExtensionTests.swift */; };
@@ -603,6 +603,13 @@
 			remoteGlobalIDString = 84E341911E2F7EFB00BDBA6F;
 			remoteInfo = DuckDuckGo;
 		};
+		07FD8B2226853E4E00A193B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84E3418A1E2F7EFB00BDBA6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E341911E2F7EFB00BDBA6F;
+			remoteInfo = DuckDuckGo;
+		};
 		83491190217F491200610F35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84E3418A1E2F7EFB00BDBA6F /* Project object */;
@@ -739,8 +746,10 @@
 		02CA904C24FD2DB000D41DDF /* ContentBlockingRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockingRulesTests.swift; sourceTree = "<group>"; };
 		02DC6A51255D8C0A00B03BC2 /* fingerprint.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = fingerprint.js; sourceTree = "<group>"; };
 		02DC6A63255D8C5000B03BC2 /* FingerprintUserScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerprintUserScript.swift; sourceTree = "<group>"; };
-		07A1A0B42670208C008929DC /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
-		07A1A0C02670209E008929DC /* SearchBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBoxTests.swift; sourceTree = "<group>"; };
+		07FD8B1D26853E4E00A193B6 /* DuckDuckGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuckDuckGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FD8B1F26853E4E00A193B6 /* DuckDuckGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckDuckGoUITests.swift; sourceTree = "<group>"; };
+		07FD8B2126853E4E00A193B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07FD8B2726853E7D00A193B6 /* DuckDuckGoUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckDuckGoUITestBase.swift; sourceTree = "<group>"; };
 		0A6CC0EE23904D5400E4F627 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1CB7B82023CEA1F800AA24EA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		1CB7B82223CEA28300AA24EA /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
@@ -2040,6 +2049,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07FD8B1A26853E4E00A193B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83491184217F491200610F35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2160,21 +2176,14 @@
 			name = fingerprinting;
 			sourceTree = "<group>";
 		};
-		07A1A0B22670206D008929DC /* XCUITests */ = {
+		07FD8B1E26853E4E00A193B6 /* DuckDuckGoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				07A1A0B32670207E008929DC /* POM */,
-				07A1A0C02670209E008929DC /* SearchBoxTests.swift */,
+				07FD8B1F26853E4E00A193B6 /* DuckDuckGoUITests.swift */,
+				07FD8B2126853E4E00A193B6 /* Info.plist */,
+				07FD8B2726853E7D00A193B6 /* DuckDuckGoUITestBase.swift */,
 			);
-			path = XCUITests;
-			sourceTree = "<group>";
-		};
-		07A1A0B32670207E008929DC /* POM */ = {
-			isa = PBXGroup;
-			children = (
-				07A1A0B42670208C008929DC /* Base.swift */,
-			);
-			path = POM;
+			path = DuckDuckGoUITests;
 			sourceTree = "<group>";
 		};
 		830FA79B1F8E81FB00FCE105 /* ContentBlocker */ = {
@@ -2406,7 +2415,6 @@
 		84E341891E2F7EFB00BDBA6F = {
 			isa = PBXGroup;
 			children = (
-				07A1A0B22670206D008929DC /* XCUITests */,
 				6FB030C7234331B400A10DB9 /* Configuration.xcconfig */,
 				84E341941E2F7EFB00BDBA6F /* DuckDuckGo */,
 				F143C2E51E4A4CD400CFDE3A /* Core */,
@@ -2422,6 +2430,7 @@
 				8512EA5224ED30D20073EE19 /* Widgets */,
 				025CCFE32582601C001CD5BB /* FingerprintingUITests */,
 				85D33FCC25C97B6E002B91A6 /* IntegrationTests */,
+				07FD8B1E26853E4E00A193B6 /* DuckDuckGoUITests */,
 				F1AA545F1E48D90700223211 /* Frameworks */,
 				84E341931E2F7EFB00BDBA6F /* Products */,
 				83ED3B8D1FA8E63700B47556 /* README.md */,
@@ -2445,6 +2454,7 @@
 				8512EA4D24ED30D20073EE19 /* WidgetsExtension.appex */,
 				025CCFE22582601C001CD5BB /* FingerprintingUITests.xctest */,
 				85D33FCB25C97B6E002B91A6 /* IntegrationTests.xctest */,
+				07FD8B1D26853E4E00A193B6 /* DuckDuckGoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3877,6 +3887,24 @@
 			productReference = 025CCFE22582601C001CD5BB /* FingerprintingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		07FD8B1C26853E4E00A193B6 /* DuckDuckGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FD8B2426853E4E00A193B6 /* Build configuration list for PBXNativeTarget "DuckDuckGoUITests" */;
+			buildPhases = (
+				07FD8B1926853E4E00A193B6 /* Sources */,
+				07FD8B1A26853E4E00A193B6 /* Frameworks */,
+				07FD8B1B26853E4E00A193B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07FD8B2326853E4E00A193B6 /* PBXTargetDependency */,
+			);
+			name = DuckDuckGoUITests;
+			productName = DuckDuckGoUITests;
+			productReference = 07FD8B1D26853E4E00A193B6 /* DuckDuckGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		83491186217F491200610F35 /* BookmarksTodayExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83491193217F491300610F35 /* Build configuration list for PBXNativeTarget "BookmarksTodayExtension" */;
@@ -4109,12 +4137,16 @@
 		84E3418A1E2F7EFB00BDBA6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = DuckDuckGo;
 				TargetAttributes = {
 					025CCFE12582601C001CD5BB = {
 						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 84E341911E2F7EFB00BDBA6F;
+					};
+					07FD8B1C26853E4E00A193B6 = {
+						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 84E341911E2F7EFB00BDBA6F;
 					};
 					83491186217F491200610F35 = {
@@ -4263,12 +4295,20 @@
 				84E341A51E2F7EFB00BDBA6F /* UnitTests */,
 				025CCFE12582601C001CD5BB /* FingerprintingUITests */,
 				85D33FCA25C97B6E002B91A6 /* IntegrationTests */,
+				07FD8B1C26853E4E00A193B6 /* DuckDuckGoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		025CCFE02582601C001CD5BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FD8B1B26853E4E00A193B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4647,6 +4687,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		07FD8B1926853E4E00A193B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FD8B2826853E7D00A193B6 /* DuckDuckGoUITestBase.swift in Sources */,
+				07FD8B2026853E4E00A193B6 /* DuckDuckGoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83491183217F491200610F35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4736,7 +4785,6 @@
 				F47E53D9250A97330037C686 /* OnboardingDefaultBroswerViewController.swift in Sources */,
 				F13B4BD51F183B3600814661 /* TabsModelPersistenceExtension.swift in Sources */,
 				F4D9C4F72511711800814B71 /* HomeMessageModel.swift in Sources */,
-				07A1A0B52670208C008929DC /* Base.swift in Sources */,
 				980891A52237D4F500313A70 /* FeedbackNavigator.swift in Sources */,
 				98DD03D025064FD20017FE36 /* PrivacyProtectionHeaderCell.swift in Sources */,
 				85058366219AE9EA00ED4EDB /* HomePageConfiguration.swift in Sources */,
@@ -4779,7 +4827,6 @@
 				980891A72237D5D800313A70 /* FeedbackPresenter.swift in Sources */,
 				85F1E9AC1FB49C0F00A75AC1 /* DisplayableCertificateBuilder.swift in Sources */,
 				989B337522D7EF2100437824 /* EmptyCollectionReusableView.swift in Sources */,
-				07A1A0C12670209E008929DC /* SearchBoxTests.swift in Sources */,
 				8524CC94246C5C8900E59D45 /* DaxDialogViewController.swift in Sources */,
 				85200F971FBB31E8001AF290 /* SiteRatingPrivacyProtectionExtension.swift in Sources */,
 				F42EF9312614BABE00101FB9 /* ActionSheetDaxDialogViewController.swift in Sources */,
@@ -5136,6 +5183,11 @@
 			isa = PBXTargetDependency;
 			target = 84E341911E2F7EFB00BDBA6F /* DuckDuckGo */;
 			targetProxy = 025CCFE72582601C001CD5BB /* PBXContainerItemProxy */;
+		};
+		07FD8B2326853E4E00A193B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84E341911E2F7EFB00BDBA6F /* DuckDuckGo */;
+			targetProxy = 07FD8B2226853E4E00A193B6 /* PBXContainerItemProxy */;
 		};
 		83491191217F491200610F35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -6208,6 +6260,57 @@
 			};
 			name = Release;
 		};
+		07FD8B2526853E4E00A193B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DuckDuckGoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xumak.DuckDuckGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuckDuckGo;
+			};
+			name = Debug;
+		};
+		07FD8B2626853E4E00A193B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DuckDuckGoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xumak.DuckDuckGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuckDuckGo;
+			};
+			name = Release;
+		};
 		83491194217F491300610F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6895,6 +6998,15 @@
 			buildConfigurations = (
 				025CCFE92582601C001CD5BB /* Debug */,
 				025CCFEA2582601C001CD5BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07FD8B2426853E4E00A193B6 /* Build configuration list for PBXNativeTarget "DuckDuckGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FD8B2526853E4E00A193B6 /* Debug */,
+				07FD8B2626853E4E00A193B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
