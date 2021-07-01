@@ -20,6 +20,7 @@
 		02DC6A64255D8C5000B03BC2 /* FingerprintUserScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC6A63255D8C5000B03BC2 /* FingerprintUserScript.swift */; };
 		07FD8B2026853E4E00A193B6 /* DuckDuckGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD8B1F26853E4E00A193B6 /* DuckDuckGoUITests.swift */; };
 		07FD8B2826853E7D00A193B6 /* DuckDuckGoUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD8B2726853E7D00A193B6 /* DuckDuckGoUITestBase.swift */; };
+		07FD8B2A2685417700A193B6 /* DuckDuckGoSearchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD8B292685417700A193B6 /* DuckDuckGoSearchBox.swift */; };
 		0A6CC0EF23904D5400E4F627 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A6CC0EE23904D5400E4F627 /* Settings.bundle */; };
 		1CB7B82123CEA1F800AA24EA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7B82023CEA1F800AA24EA /* DateExtension.swift */; };
 		1CB7B82323CEA28300AA24EA /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7B82223CEA28300AA24EA /* DateExtensionTests.swift */; };
@@ -750,6 +751,7 @@
 		07FD8B1F26853E4E00A193B6 /* DuckDuckGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckDuckGoUITests.swift; sourceTree = "<group>"; };
 		07FD8B2126853E4E00A193B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07FD8B2726853E7D00A193B6 /* DuckDuckGoUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckDuckGoUITestBase.swift; sourceTree = "<group>"; };
+		07FD8B292685417700A193B6 /* DuckDuckGoSearchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckDuckGoSearchBox.swift; sourceTree = "<group>"; };
 		0A6CC0EE23904D5400E4F627 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1CB7B82023CEA1F800AA24EA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		1CB7B82223CEA28300AA24EA /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
@@ -2182,6 +2184,7 @@
 				07FD8B1F26853E4E00A193B6 /* DuckDuckGoUITests.swift */,
 				07FD8B2126853E4E00A193B6 /* Info.plist */,
 				07FD8B2726853E7D00A193B6 /* DuckDuckGoUITestBase.swift */,
+				07FD8B292685417700A193B6 /* DuckDuckGoSearchBox.swift */,
 			);
 			path = DuckDuckGoUITests;
 			sourceTree = "<group>";
@@ -4691,6 +4694,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FD8B2A2685417700A193B6 /* DuckDuckGoSearchBox.swift in Sources */,
 				07FD8B2826853E7D00A193B6 /* DuckDuckGoUITestBase.swift in Sources */,
 				07FD8B2026853E4E00A193B6 /* DuckDuckGoUITests.swift in Sources */,
 			);

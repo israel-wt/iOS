@@ -1,5 +1,9 @@
 import XCTest
 
-class DuckDuckGoUITests: XCTestCase {
+class DuckDuckGoUITests: DuckDuckGoUITestBase {
     //Add tests here
+    
+    func testBookmarksScreen () {
+        app.toolbars["Toolbar"].buttons["Bookmarks"].tap()
+    }
 }
