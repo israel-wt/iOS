@@ -1,9 +1,17 @@
 import XCTest
 
-class DuckDuckGoUITests: DuckDuckGoUITestBase {
-    //Add tests here
+class DuckDuckGoUITests: DuckDuckGoUIBooksmarkBase {
+    // Add tests here
     
-    func testBookmarksScreen () {
-        app.toolbars["Toolbar"].buttons["Bookmarks"].tap()
+    func testBookmarksScreen() {
+        openBookmarksTab()
+        validateBooksmarksScreen()
+    }
+    
+    func testCloseBoomarksScreen() {
+        testBookmarksScreen()
+        closeBookmarksTab()
+        XCTAssertFalse(bookmarkNav.staticTexts["Bookmarks"].waitForExistence(timeout: 5))
     }
 }
+
