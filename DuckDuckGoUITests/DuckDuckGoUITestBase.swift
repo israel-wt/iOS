@@ -11,7 +11,5 @@ class DuckDuckGoUITestBase: XCTestCase {
         app.launch()
     }
 
-    override func tearDown() {
-        super.tearDown()
-    }
+
 }
