@@ -8,10 +8,8 @@ class DuckDuckGoUITests: DuckDuckGoUIBooksmarkBase {
         validateBooksmarksScreen()
     }
     
-    func testCloseBoomarksScreen() {
-        testBookmarksScreen()
-        closeBookmarksTab()
-        XCTAssertFalse(bookmarkNav.staticTexts["Bookmarks"].waitForExistence(timeout: 7))
+    func test2() {
+    
     }
 }
 
