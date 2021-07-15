@@ -10,6 +10,8 @@ class DuckDuckGoUITestBase: XCTestCase {
         continueAfterFailure = false
         app.launch()
     }
-
-
+    
+    override func tearDown() {
+        super.tearDown()
+    }
 }
