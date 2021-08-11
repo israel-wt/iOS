@@ -20,9 +20,6 @@ class DuckDuckGoUIBooksmarkBase: DuckDuckGoUITestBase {
     func closeBookmarksTab() {
         bookmarkNav.buttons["Done"].tap()
     }
-    
-    func resetScreen() {
-        bookmarkNav.buttons["Done"].tap()
-    }
+
 }
     
