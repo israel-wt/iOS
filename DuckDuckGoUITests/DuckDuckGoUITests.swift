@@ -14,4 +14,3 @@ class DuckDuckGoUITests: DuckDuckGoUIBooksmarkBase {
         XCTAssertFalse(bookmarkNav.staticTexts["Bookmarks"].waitForExistence(timeout: 7))
     }
 }
-
